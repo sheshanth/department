@@ -37,7 +37,7 @@ class Greeting {
 		return "Hello!, from department application";
 	}
 
-	@GetMapping
+	@GetMapping("/allservices")
 	public List<String> getAllServices() {
 		return this.discoveryClient.getServices();
 	}
